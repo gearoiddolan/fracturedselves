@@ -1,0 +1,1114 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-size: 100vw;
+
+	text-align: center;
+	margin: auto;
+}
+
+
+
+h1 {font-family: 'Saira Stencil One',sans-serif;
+
+  font-size: 6.5vw;
+  letter-spacing: .4vw;
+text-shadow: 5px 5px 3px black;
+color: white;
+text-align: center;
+padding: 5px;
+width: 100vw;
+}
+
+/* ASIDE BOXES CLASS WITH MODAL TEXT STYLING --------------------------MODAL  TEXT STYLE--- */
+.asideBox {
+  display: flex;
+  flex-direction: column;
+    justify-content:center;
+         align-items:center;
+     margin: auto;
+     height: 40.5vw;
+     width: 100%;
+     z-index: 3000;
+}
+
+.modalText {font-family: 'Saira Stencil One',sans-serif;
+
+  font-size: 2.5vw;
+  letter-spacing: .4vw;
+text-shadow: 5px 5px 3px black;
+color: white;
+text-align: center;
+padding: 5px;
+width: 100%;
+}
+.modalTextbody {    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    font-size: 1.5vw;
+    color: white;
+}
+/* ASIDE BOXES CLASS WITH MODAL TEXT STYLING --------------------------MODAL  TEXT STYLE--- */
+
+
+img {
+  overflow: hidden;
+}
+
+a:hover {
+	color:white;
+	font-size:1em;
+	text-align: center;
+		text-shadow: 0px 0px 10px lightgray;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+     align-items: flex-start;
+     margin: auto;
+
+}
+.goodbyeThumbnail {
+     margin: auto;
+  text-align: center;
+}
+.thumbpic{
+  width: 16vw;
+     margin: auto;
+}
+.thumbtext {
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+    /* align-items: stretch;
+    align-content: stretch; */
+     flex-wrap: nowrap;
+}
+.thumbwords{
+  width: 16vw;
+       /* height: 15vw; */
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  font-size: 2vw;
+  color: white;
+  background: rgba(0,0,0,0.85);
+  padding: 10px;
+  margin: auto;
+/* align-content: stretch; */
+}
+#backgroundSensei {
+	background-image: url("images/fsSensei_bk.jpg");
+  background-size: 100vw;
+	text-align: center;
+	margin: auto;
+}
+
+.backGroundDiv {
+  background-color: black;
+  margin:auto;
+	text-align: center;
+}
+.items {
+  display: grid;
+  align-content: stretch;
+  justify-content: space-around;
+  min-width: 600px;
+min-height: 100vh;
+  grid-template-columns: 14vw  18vw  18vw  18vw  18vw 14vw;
+  grid-template-rows: auto;
+  margin: auto;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+.topBox {
+  font-family: 'Saira Stencil One',sans-serif;
+    font-size: 3vw;
+	text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 72vw;
+  margin: auto;
+  grid-area: 1/2/2/6;
+  /* row 1 - 2, column 2 -6 */
+}
+
+#topTit{
+  position: absolute;
+  top:20vw;
+  padding: 5px;
+    text-align: center;
+  width: 72vw;
+  margin: auto;
+  grid-area: 1/2/2/6;
+  /* row 1 - 2, column 2 -6 */
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+#spaceBox1 {
+  width: 100vw;
+    height: 40vw;
+  margin: auto;
+  grid-area: 2/1/3/7;
+}
+@supports (-webkit-text-stroke: 1px black) {
+#spaceBox1 {
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: white;
+}
+  /* row 2 - 3, column 1 -7 ie full width */
+}
+#nunBox {
+  position: absolute;
+  left: 63vw;
+  top: 40vw;
+  animation-name: nunWalk ;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 2;
+}
+@keyframes nunWalk {
+  0% {left:63vw;
+      transform: rotateY(0deg);
+  }
+
+
+
+49% {left: 2vw;
+          transform: rotateY(0deg);
+  }
+  51% {left: 2vw;
+            transform: rotateY(180deg);
+    }
+    99% {left: 63vw;
+              transform: rotateY(180deg);
+      }
+    100% {left: 63vw;
+                transform: rotateY(0deg);
+        }
+}
+#rulerBox {
+  position: absolute;
+  left:2vw;
+  top: 45vw;
+  animation-name: ruler ;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 1;
+}
+@keyframes ruler {
+  0% {left:2vw;
+      top: 50vw;
+    opacity: 0;
+  }
+  5% {left:6vw;
+    top: 40vw;
+        opacity: 1;
+        transform: rotate(-50deg);
+  }
+  10% {left:6vw;
+    top: 50vw;
+        transform: rotate(0deg);
+  }
+  30% {left:30vw;
+    top: 40vw;
+        transform: rotate(-50deg);
+  }
+  32% {left:30vw;
+    top: 50vw;
+        transform: rotate(0deg);
+  }
+
+60% {left:55vw;
+  top: 40vw;
+      transform: rotate(-50deg);
+  }
+  62% {left: 55vw;
+    top: 50vw;
+        transform: rotate(0deg);
+  }
+95% {
+  opacity: 1;
+  }
+  100% {left: 65vw;
+     top: 50vw;
+        opacity: 0;
+  }
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+#tit1{
+  font-family: 'Saira Stencil One',sans-serif;
+    font-size: 3vw;
+  text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 72vw;
+}
+.vidBox1 {
+  width: 72vw;
+  margin: auto;
+  grid-area: 3/2/4/6;
+  /* row 3 - 4, column 2 -6 */
+}
+/* make the video content responsive */
+#videoID1{
+width:100%; height: 100%; position: relative;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+#aside1L{
+  position: absolute;
+  top: 74vw;
+  left:2vw;
+  grid-area: 3/1/4/2;
+  /* row 3 - 4, column 1 -2 */
+  text-align: center;
+    margin: auto;
+      z-index:3000;
+}
+#aside1R{
+  position: absolute;
+  top: 74vw;
+right:2vw;
+  grid-area: 3/6/4/7;
+  /* row 3 - 4, column 6 -7 */
+  text-align: center;
+    margin: auto;
+      z-index: 3000;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+#spaceBox2 {
+  font-family: 'Saira Stencil One',sans-serif;
+  font-size: 3vw;
+	text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 100vw;
+    height: 32vw;
+  margin: auto;
+  grid-area: 4/1/5/7;
+  /* row 4 - 5, column 1 -7 ie full width */
+}
+
+#headKickBox
+{
+  position: absolute;
+  left:7vw;
+  top: 135vw;
+    z-index: 1;
+}
+
+#leatherHitBox {
+  position: absolute;
+  left:55vw;
+  top: 130vw;
+    z-index: 3;
+}
+#leatherBox {
+  position: absolute;
+  left:64vw;
+  top: 170vw;
+  animation-name: leather ;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 2;
+}
+@keyframes leather {
+  0% {left:64vw;
+      top: 170vw;
+    opacity: 0;
+  }
+  5% {left:64vw;
+    top: 160vw;
+        opacity: 1;
+        transform: rotate(50deg);
+  }
+  10% {left:64vw;
+    top: 170vw;
+        transform: rotate(0deg);
+  }
+  30% {left:50vw;
+    top: 160vw;
+        transform: rotate(50deg);
+  }
+  32% {left:50vw;
+    top: 170vw;
+        transform: rotate(0deg);
+  }
+
+60% {left:15vw;
+  top: 160vw;
+      transform: rotate(50deg);
+  }
+  62% {left: 15vw;
+    top: 170vw;
+        transform: rotate(0deg);
+  }
+95% {
+  opacity: 1;
+  }
+  100% {left:2vw;
+     top: 170vw;
+        opacity: 0;
+  }
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+#tit2{
+  font-family: 'Saira Stencil One',sans-serif;
+    font-size: 3vw;
+  text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 72vw;
+}
+.vidBox2 {
+  width: 72vw;
+  margin: auto;
+  grid-area: 5/2/6/6;
+  /* row 5 - 6, column 2 -6 */
+    z-index: 4;
+}
+/* make the video content responsive */
+#videoID2{
+width:100%; height: 100%; position: relative;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+#spaceBox3 {
+  font-family: 'Saira Stencil One',sans-serif;
+    font-size: 3vw;
+	text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 100vw;
+    height: 32vw;
+  margin: auto;
+  grid-area: 6/1/7/7;
+  /* row 6 - 7, column 1 -7 ie full width */
+}
+
+
+#blackboardBox {
+  position: absolute;
+  left:10vw;
+  top: 250vw;
+    z-index: 1;
+}
+#dusterBox {
+  position: absolute;
+  left:72vw;
+  top: 255vw;
+  animation-name: duster ;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 1;
+}
+@keyframes duster {
+  0% {left:72vw;
+      top: 255vw;
+    opacity: 0;
+      transform: scale(1)rotate(120deg);
+  }
+  5% {left:66vw;
+  opacity: 1;
+}
+
+80% {left:15vw;
+     top: 255vw;
+    transform: scale(1);
+  }
+
+  100% {left:42vw;
+     top: 300vw;
+     transform: scale(.1);
+  }
+}
+#chalk1Box {
+  position: absolute;
+  left:72vw;
+  top: 255vw;
+  animation-name: chalk1 ;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+    animation-delay: 0.5s;
+  z-index: 1;
+}
+@keyframes chalk1 {
+  0% {left:72vw;
+      top: 255vw;
+    opacity: 0;
+      transform: scale(1)rotate(200deg);
+  }
+  5% {left:66vw;
+  opacity: 1;
+}
+
+80% {left:25vw;
+     top: 260vw;
+    transform: scale(1);
+  }
+
+  100% {left:22vw;
+     top: 300vw;
+     transform: scale(.1);
+  }
+}
+#chalk2Box {
+  position: absolute;
+  left: 72vw;
+  top: 255vw;
+  animation-name: chalk2 ;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+    animation-delay: 0.7s;
+  z-index: 1;
+}
+@keyframes chalk2 {
+  0% {left:72vw;
+      top: 255vw;
+    opacity: 0;
+      transform: scale(1)rotate(300deg);
+  }
+  5% {left:66vw;
+  opacity: 1;
+}
+
+80% {left:20vw;
+     top: 270vw;
+    transform: scale(1);
+  }
+
+  100% {left:30vw;
+     top: 280vw;
+     transform: scale(.1);
+  }
+}
+#chalk3Box {
+  position: absolute;
+  left: 72vw;
+  top: 275vw;
+  animation-name: chalk3 ;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  z-index: 1;
+}
+@keyframes chalk3 {
+  0% {left:72vw;
+      top: 275vw;
+    opacity: 0;
+      transform: scale(1)rotate(270deg);
+  }
+  5% {left:66vw;
+  opacity: 1;
+}
+
+80% {left:20vw;
+     top: 260vw;
+    transform: scale(1);
+  }
+
+  100% {left:20vw;
+     top: 290vw;
+     transform: scale(.1);
+  }
+}
+#chalk4Box {
+  position: absolute;
+left:72vw;
+  top: 265vw;
+  animation-name: chalk4 ;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+    animation-delay: 1.5s;
+  z-index: 1;
+}
+@keyframes chalk4 {
+  0% {left:72vw;
+      top: 265vw;
+    opacity: 0;
+      transform: scale(1)rotate(200deg);
+  }
+  5% {left:66vw;
+  opacity: 1;
+}
+
+80% {left:25vw;
+     top: 260vw;
+    transform: scale(1);
+  }
+
+  100% {left:22vw;
+     top: 300vw;
+     transform: scale(.1);
+  }
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+#tit3{
+  font-family: 'Saira Stencil One',sans-serif;
+    font-size: 3vw;
+  text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 72vw;
+}
+.vidBox3 {
+  width: 72vw;
+  margin: auto;
+  grid-area: 7/2/8/6;
+  /* row 7 - 8, column 2 -6 */
+    z-index: 4;
+}
+/* make the video content responsive */
+#videoID3{
+width:100%; height: 100%; position: relative;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+#spaceBox4 {
+  font-family: 'Saira Stencil One',sans-serif;
+  font-size: 3vw;
+	text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 100vw;
+      height: 32vw;
+  margin: auto;
+  grid-area: 8/1/9/7;
+  /* row 8 - 9, column 1 -7 ie full width */
+}
+#chestBox{
+  position: absolute;
+  left: 35vw;
+  top: 365vw;
+    z-index: 1;
+}
+#hkdanceBox {
+  position: absolute;
+  left: 10vw;
+  top: 360vw;
+  animation-name: hkDance ;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+    /* animation-delay: 0.5s; */
+  z-index: 3;
+}
+@keyframes hkDance {
+  0% {  left: 10vw;
+      top: 360vw;
+  }
+  90% {left:66vw;
+        top: 360vw;
+      transform: rotate(0deg);
+}
+95%{        top: 340vw;
+  transform: rotate(-180deg);
+}
+
+
+  100% {  left: 10vw;
+      top: 360vw;
+        transform: rotate(-360deg);
+  }
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+#tit4{
+  font-family: 'Saira Stencil One',sans-serif;
+    font-size: 3vw;
+  text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 72vw;
+}
+.vidBox4 {
+  width: 72vw;
+  margin: auto;
+  grid-area: 9/2/10/6;
+  /* row 9 - 10, column 2 -6 */
+    z-index: 2;
+}
+/* make the video content responsive */
+#videoID4{
+width:100%; height: 100%; position: relative;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+#spaceBox5 {
+  font-family: 'Saira Stencil One',sans-serif;
+  font-size: 3vw;
+	text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 100vw;
+    height: 32vw;
+  margin: auto;
+  grid-area: 10/1/11/7;
+  /* row 10 - 11, column 1 -7 ie full width */
+}
+
+#gBokkenBox{
+  position: absolute;
+  left: 13vw;
+  top: 466vw;
+    z-index: 4;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+#tit5{
+  font-family: 'Saira Stencil One',sans-serif;
+    font-size: 3vw;
+  text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 72vw;
+}
+.vidBox5 {
+  width: 72vw;
+  margin: auto;
+  grid-area: 11/2/12/6;
+  /* row 11 - 12, column 2 -6 */
+      z-index: 2;
+}
+/* make the video content responsive */
+#videoID5{
+width:100%; height: 100%; position: relative;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+#spaceBox6 {
+  font-family: 'Saira Stencil One',sans-serif;
+  font-size: 3vw;
+	text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 100vw;
+    height: 32vw;
+  margin: auto;
+  grid-area: 12/1/13/7;
+  /* row 12 - 13, column 1 -7 ie full width */
+}
+#tatEizanBox {
+  position: absolute;
+  left: 2vw;
+  top: 581vw;
+  animation-name: tatEizan;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  z-index: 4;
+}
+@keyframes tatEizan {
+  0% {left: 2vw;
+    transform: rotate(0deg);
+  }
+  49% {left: 48vw;
+      transform: rotate(0deg);
+  }
+  51% {left: 48vw;
+      transform: rotate(180deg);
+  }
+  99% {left: 2vw;
+      transform: rotate(180deg);
+  }
+  100% {left: 2vw;
+        transform: rotate(0deg);
+  }
+}
+#tatBushidoBox {
+  position: absolute;
+  left: 48vw;
+  top: 565vw;
+  animation-name: bushido;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  z-index: 4;
+}
+@keyframes bushido {
+  0% {  left: 48vw;
+    transform: rotate(0deg);
+  }
+  49% { left: 2vw;
+      transform: rotate(0deg);
+  }
+  51% {left: 2vw;
+      transform: rotate(180deg);
+  }
+  99% {  left: 48vw;
+      transform: rotate(180deg);
+  }
+  100% {  left: 48vw;
+        transform: rotate(0deg);
+  }
+}
+#tatSenseiBox {
+  position: absolute;
+  left: 25vw;
+  top: 575vw;
+  animation-name: sensei;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  z-index: 4;
+}
+@keyframes sensei {
+  0% {
+    transform: scale(1.5);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+#tit6{
+  font-family: 'Saira Stencil One',sans-serif;
+    font-size: 3vw;
+  text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 72vw;
+}
+.vidBox6 {
+  width: 72vw;
+  margin: auto;
+  grid-area: 13/2/14/6;
+  /* row 13 - 14, column 2 -6 */
+        z-index: 2;
+}
+/* make the video content responsive */
+#videoID6{
+width:100%; height: 100%; position: relative;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+#spaceBox7 {
+  font-family: 'Saira Stencil One',sans-serif;
+  font-size: 3vw;
+	text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 100vw;
+  height: 10vw;
+  margin: auto;
+  grid-area: 14/1/15/7;
+  /* row 13 - 15, column 1 -7 ie full width */
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* ALL MODALS BELOW - look next to vidboxes for aside boxes///////////////////////  */
+
+/* 0000000000000000000000XXXXXXXXXXXXXXX00000000000000000 */
+/* The Modal _1La (background) */
+.modal_1La {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.7);
+  font-family: 'Allerta Stencil', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+/* Modal Content/Box */
+.modal_1La-content {
+  background-color: black;
+  margin: auto;
+  position: fixed;
+  left: 20vw;
+  top: 10vw;
+  padding: 20px;
+  width: 75vw;
+  height: 75vh;
+}
+/* Modal HD Content/Box */
+.modal_1LaHD-content {
+  background-color: black;
+  margin: auto;
+  position: fixed;
+  left: 12vw;
+  top: 10vw;
+  padding: 20px;
+  width: 75vw;
+  height: 75vh;
+}
+
+/* The Close Button */
+.modal_1Laclose {
+  color: white;
+  float: right;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 20px;
+}
+
+.modal_1Laclose:hover,
+.modal_1Laclose:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal_1La:hover {
+  cursor: pointer;
+}
+#myModal_1LaBtn:hover {
+  cursor: pointer;
+}
+.modal_1La-content:hover {
+  cursor: default;
+}
+/* 0000000000000000000000XXXXXXXXXXXXXXX00000000000000000 */
+
+/* 0000000000000000000000XXXXXXXXXXXXXXX00000000000000000 */
+/* The Modal _1Ra (background) */
+.modal_1Ra {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.7);
+  font-family: 'Allerta Stencil', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+/* Modal Content/Box */
+.modal_1Ra-content {
+  background-color: black;
+  margin: auto;
+  position: fixed;
+  left: 20vw;
+  top: 10vw;
+  padding: 20px;
+  width: 75vw;
+  height: 75vh;
+}
+/* Modal HD Content/Box */
+.modal_1RaHD-content {
+  background-color: black;
+  margin: auto;
+  position: fixed;
+  left: 12vw;
+  top: 10vw;
+  padding: 20px;
+  width: 75vw;
+  height: 75vh;
+}
+
+/* The Close Button */
+.modal_1Raclose {
+  color: white;
+  float: right;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 20px;
+}
+
+.modal_1Raclose:hover,
+.modal_1Raclose:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal_1Ra:hover {
+  cursor: pointer;
+}
+#myModal_1RaBtn:hover {
+  cursor: pointer;
+}
+.modal_1Ra-content:hover {
+  cursor: default;
+}
+/* 0000000000000000000000XXXXXXXXXXXXXXX00000000000000000 */
+
+/* 0000000000000000000000XXXXXXXXXXXXXXX00000000000000000 */
+/* The Modal _1Rb (background) */
+.modal_1Rb {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.7);
+  font-family: 'Allerta Stencil', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+/* Modal Content/Box */
+.modal_1Rb-content {
+  background-color: black;
+  margin: auto;
+  position: fixed;
+  left: 20vw;
+  top: 10vw;
+  padding: 20px;
+  width: 75vw;
+  height: 75vh;
+}
+/* Modal HD Content/Box */
+.modal_1RbHD-content {
+  background-color: black;
+  margin: auto;
+  position: fixed;
+  left: 12vw;
+  top: 10vw;
+  padding: 20px;
+  width: 75vw;
+  height: 75vh;
+}
+
+/* The Close Button */
+.modal_1Rbclose {
+  color: white;
+  float: right;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 20px;
+}
+
+.modal_1Rbclose:hover,
+.modal_1Rbclose:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal_1Rb:hover {
+  cursor: pointer;
+}
+#myModal_1RbBtn:hover {
+  cursor: pointer;
+}
+.modal_1Rb-content:hover {
+  cursor: default;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+#fracturedSelvesButt{
+  width:15vw;
+  max-width: 220px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: fixed;
+left:0vw;
+  top: 4vw;
+  width:12vw;
+  max-width: 220px;
+  z-index: 4000;
+    font-family: 'Saira Stencil One', sans-serif;
+    font-size: 2vw;
+    margin: auto;
+    text-align: center;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: relative;
+/* left: 1vw; */
+    min-width: 1em;
+    background-color: rgba(0,0,0,0.6);
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1.2vw;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-bottom: 0.1vw solid white;
+    z-index: 4000;
+    width:9vw;
+    max-width: 220px;
+        text-align: center;
+    /* margin: auto; */
+    /* height: 7em; */
+}
+/* .dropdown-content2 {
+    display: none;
+    position: relative;
+    right: 7vw;
+    min-width: 1em;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 20;
+    width:10vw;
+    max-width: 220px;
+    text-align: left;
+} */
+/* Links inside the dropdown */
+/* .dropdown-content2 a {
+    background-color: rgba(0,0,0,0.6);
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+    border-bottom: 0.1vw solid white;
+    display: block;
+} */
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Show the dropdown second menu on hover */
+/* .dropdown-content:hover .dropdown-content2 {
+    display: block;
+} */
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */

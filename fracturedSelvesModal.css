@@ -1,0 +1,1440 @@
+@charset "UTF-8";
+/* font-family: 'Saira Stencil One', sans-serif;
+font-family: 'Oxygen', sans-serif; */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-size: 100vw;
+
+	text-align: center;
+	margin: auto;
+}
+p {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: white;
+    background: rgba(200,0,0,0.85);
+			z-index: -10;
+}
+
+
+h1 {font-family: 'Saira Stencil One',sans-serif;
+
+	font-size: 6.5vw;
+  letter-spacing: .4vw;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	text-transform: uppercase;
+}
+h2 {font-family: 'Saira Stencil One',sans-serif;
+
+  font-size: 6.5vw;
+  letter-spacing: .4vw;
+text-shadow: 5px 5px 3px black;
+color: white;
+text-align: center;
+padding: 5px;
+width: 100vw;
+}
+h3 {font-family: 'Saira Stencil One', sans-serif;
+    font-size: 1em
+    color: white;
+    text-align: center;
+		z-index: -10;
+    }
+h4 {font-family: "allerta-stencil-body", sans-serif;
+    font-size: 1em;
+    padding: 5px;
+    text-align: center;
+    color: #FFFFFF;
+	background: rgba(0,00,0,0.65);
+}
+
+.saira	{
+    padding: 3px;
+    font-family: 'Saira Stencil One', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #FFFFFF;
+	background: rgba(0,0,0,0.85);
+		max-width: 1000px;
+		margin: auto;
+		z-index: -10;
+}
+
+img {
+  overflow: hidden;
+}
+
+a:hover {
+	color:white;
+	font-size:1em;
+	text-align: center;
+		text-shadow: 0px 0px 10px lightgray;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+     align-items: flex-start;
+     margin: auto;
+
+}
+.goodbyeThumbnail {
+     margin: auto;
+  text-align: center;
+}
+.thumbpic{
+  width: 16vw;
+     margin: auto;
+}
+.thumbtext {
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+    /* align-items: stretch;
+    align-content: stretch; */
+     flex-wrap: nowrap;
+}
+.thumbwords{
+  width: 16vw;
+       /* height: 15vw; */
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  font-size: 2vw;
+  color: white;
+  background: rgba(0,0,0,0.85);
+  padding: 10px;
+  margin: auto;
+/* align-content: stretch; */
+}
+#backgroundAbout {
+	background-image: url("images/fsGDK_bk.jpg");
+  background-size: 100vw;
+  background-repeat: repeat;
+  height: 2100vw;
+	text-align: center;
+	margin: auto;
+}
+#backgroundVid {
+	background-image: url("images/fssMach_bk.jpg");
+  background-size: 100vw;
+  background-repeat: repeat;
+  height: 220vw;
+	text-align: center;
+	margin: auto;
+}
+#subTit {
+  position: absolute;
+  top: 13vw;
+  left: 14vw;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-weight: 300;
+  font-size: 1.75vw;
+  color: white;
+  text-align: center;
+  /* padding: 5px; */
+  width: 72vw;
+    /* height: 32vw; */
+  margin: auto;
+  grid-area: 2/1/3/7;
+      background: rgba(00,0,0,0.85);
+}
+
+/* @media screen and (max-width: 800px) {
+div.mainGrid {
+  grid-template-columns: 1vw 1fr 1fr 1fr ;
+    }
+} */
+.mainGrid {
+  position: relative;
+  display:inline-grid;
+  align-content:left;
+  justify-content: center;
+  width: 100vw;
+  grid-template-columns: 24vw 24vw 24vw 24vw ;
+  grid-template-rows: auto;
+}
+
+
+
+/* +++++++++VIDEO+++++++++++++++++++++++++ */
+
+
+#videoFlex{
+display: flex;
+position: absolute;
+top: 20vw;
+  left: 1vw;
+width: 98vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items:center;
+  align-content: flex-start;
+    /* background-color: yellow; */
+}
+
+.vidThumb {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  font-size: 1.5vw;
+  color: white;
+  text-align: center;
+  padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+        z-index: 30;
+        width: 20vw;
+              background: rgba(00,0,0,0.85);
+}
+
+/* Make thumbnails show cursor:pointer */
+
+#poinT {
+}
+#poinT:hover {
+  cursor: pointer;
+}
+/* text box inside all modals */
+.vidBox {
+  font-family: 'Saira Stencil One',sans-serif;
+  font-size: 2.8vw;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+
+#matrix {
+  grid-area: 1/1/2/5;
+  position: absolute;
+  top: 1vw;
+    left: 14vw;
+  width: 72vw;
+  font-family: 'Saira Stencil One',sans-serif;
+  background: black;
+  font-size: 6.5vw;
+  	color: white;
+  	text-align: center;
+  	padding: 1px;
+      margin: auto;
+        z-index: 20;
+}
+
+/* +++++++++++++++++++++++++++++++++++
+modal pop up windows based on ww3 w3schools
+https://www.w3schools.com/howto/howto_css_modals.asp
++++++++++++++++++++++++++++++++++++ */
+/* tags are from eizan related to years and months so 1809 is 2018 september */
+
+/* MODAL 1809 */
+/* The Modal (background) */
+.modal1809 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1809-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1809{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1809close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1809close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1809:hover {
+  cursor: pointer;
+}
+.modal1809-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1809 XXXXXXXXXXXXXXX00000000000000000 exiting MODAL 1809 */
+
+/* MODAL 1810 */
+/* The Modal (background) */
+.modal1810 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1810-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1810{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1810close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1810close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1810:hover {
+  cursor: pointer;
+}
+.modal1810-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1810 XXXXXXXXXXXXXXX00000000000000000 exiting MODAL 1810*/
+
+/* MODAL 1811 */
+/* The Modal (background) */
+.modal1811 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1811-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1811{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1811close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1811close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1811:hover {
+  cursor: pointer;
+}
+.modal1811-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1811 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 1812 */
+/* The Modal (background) */
+.modal1812 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1812-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1812{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1812close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1812close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1812:hover {
+  cursor: pointer;
+}
+.modal1812-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1812 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 1901 */
+/* The Modal (background) */
+.modal1901 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1901-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1901{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1901close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1901close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1901:hover {
+  cursor: pointer;
+}
+.modal1901-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1901 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 1902 */
+/* The Modal (background) */
+.modal1902 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1902-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1902{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1902close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1902close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1902:hover {
+  cursor: pointer;
+}
+.modal1902-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1902 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 1903 */
+/* The Modal (background) */
+.modal1903 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1903-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1903{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1903close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1903close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1903:hover {
+  cursor: pointer;
+}
+.modal1903-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1903 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 1904 */
+/* The Modal (background) */
+.modal1904 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1904-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1904{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1904close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1904close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1904:hover {
+  cursor: pointer;
+}
+.modal1904-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1904 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 1905 */
+/* The Modal (background) */
+.modal1905 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1905-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1905{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1905close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1905close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1905:hover {
+  cursor: pointer;
+}
+.modal1905-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1905 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 1906 */
+/* The Modal (background) */
+.modal1906 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1906-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1906{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1906close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1906close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1906:hover {
+  cursor: pointer;
+}
+.modal1906-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1906 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 1907 */
+/* The Modal (background) */
+.modal1907 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1907-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1907{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1907close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1907close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1907:hover {
+  cursor: pointer;
+}
+.modal1907-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1907 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 1908 */
+/* The Modal (background) */
+.modal1908 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1908-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1908{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1908close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1908close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1908:hover {
+  cursor: pointer;
+}
+.modal1908-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1908 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 1909 */
+/* The Modal (background) */
+.modal1909 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1909-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1909{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1909close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1909close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1909:hover {
+  cursor: pointer;
+}
+.modal1909-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1909 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 1910 */
+/* The Modal (background) */
+.modal1910 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1910-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1910{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1910close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1910close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1910:hover {
+  cursor: pointer;
+}
+.modal1910-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1910 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 1911 */
+/* The Modal (background) */
+.modal1911 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1911-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1911{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1911close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1911close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1911:hover {
+  cursor: pointer;
+}
+.modal1911-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1911 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 1912 */
+/* The Modal (background) */
+.modal1912 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal1912-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID1912{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal1912close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal1912close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal1912:hover {
+  cursor: pointer;
+}
+.modal1912-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 1912 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 2001 */
+/* The Modal (background) */
+.modal2001 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal2001-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID2001{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal2001close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal2001close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal2001:hover {
+  cursor: pointer;
+}
+.modal2001-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 2001 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 2002 */
+/* The Modal (background) */
+.modal2002 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal2002-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID2002{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal2002close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal2002close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal2002:hover {
+  cursor: pointer;
+}
+.modal2002-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 2002 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 2003 */
+/* The Modal (background) */
+.modal2003 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal2003-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID2003{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal2003close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal2003close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal2003:hover {
+  cursor: pointer;
+}
+.modal2003-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 2003 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 2004 */
+/* The Modal (background) */
+.modal2004 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal2004-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID2004{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal2004close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal2004close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal2004:hover {
+  cursor: pointer;
+}
+.modal2004-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 2004 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 2005 */
+/* The Modal (background) */
+.modal2005 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal2005-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID2005{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal2005close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal2005close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal2005:hover {
+  cursor: pointer;
+}
+.modal2005-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 2005 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 2006 */
+/* The Modal (background) */
+.modal2006 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal2006-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID2006{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal2006close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal2006close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal2006:hover {
+  cursor: pointer;
+}
+.modal2006-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 2006 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 2007 */
+/* The Modal (background) */
+.modal2007 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal2007-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID2007{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal2007close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal2007close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal2007:hover {
+  cursor: pointer;
+}
+.modal2007-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 2007 XXXXXXXXXXXXXXX00000000000000000 */
+
+/* MODAL 2008 */
+/* The Modal (background) */
+.modal2008 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9);
+font-family: 'Saira Stencil One', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+/* Modal Content/Box */
+.modal2008-content {
+  margin: auto;
+  position: absolute; left:10vw;
+  padding: 20px;
+  width: 80%; height: 100%;
+}
+/* make the video content responsive */
+#videoID2008{
+width:80%; height: 80%; position: relative; left: 8vw;
+}
+/* The Close Button */
+.modal2008close {
+  color: white;
+  float: right;
+  font-family: 'Saira Stencil One', sans-serif;
+  font-size: 5vw;
+}
+.modal2008close:hover,
+.modal1close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Make modal backgrounds show cursor:pointer */
+#myModal2008:hover {
+  cursor: pointer;
+}
+.modal2008-content:hover {
+  cursor: default;
+}
+/* --------- exiting MODAL 2008 XXXXXXXXXXXXXXX00000000000000000 */
+/* ++++++++++++++++++++++++++++++++ © G.Dolan 2021 ++++++++++++++++++++++++++++++++++++
++++++++++ special thanks to https://www.w3schools.com/ for tips and tricks +++++++++ */
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+#fracturedSelvesButt{
+  width:15vw;
+  max-width: 220px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: fixed;
+left:0vw;
+  top: 1.5vw;
+  width:15vw;
+  max-width: 220px;
+  z-index: 4000;
+    font-family: 'Saira Stencil One', sans-serif;
+    font-size: 2vw;
+    margin: auto;
+    text-align: center;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: relative;
+/* left: 1vw; */
+    min-width: 1em;
+    background-color: rgba(0,0,0,0.6);
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1.2vw;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-bottom: 0.1vw solid white;
+    z-index: 4000;
+    width:9vw;
+    max-width: 220px;
+        text-align: center;
+    /* margin: auto; */
+    /* height: 7em; */
+}
+/* .dropdown-content2 {
+    display: none;
+    position: relative;
+    right: 7vw;
+    min-width: 1em;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 20;
+    width:10vw;
+    max-width: 220px;
+    text-align: left;
+} */
+/* Links inside the dropdown */
+/* .dropdown-content2 a {
+    background-color: rgba(0,0,0,0.6);
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+    border-bottom: 0.1vw solid white;
+    display: block;
+} */
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Show the dropdown second menu on hover */
+/* .dropdown-content:hover .dropdown-content2 {
+    display: block;
+} */
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
